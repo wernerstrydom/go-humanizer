@@ -2,7 +2,6 @@ package en
 
 import (
     "fmt"
-    "log"
     "regexp"
     "sort"
     "strings"
@@ -233,10 +232,10 @@ func (v *vocabulary) applyRules(skipFirstRule bool, word string, rules []*rule) 
 
     for _, rule := range rules {
         if result, ok = rule.apply(word); ok && result != "" {
-            log.Println("applied rule", rule.regex, "to", word, "=>", result)
+            // log.Println("applied rule", rule.regex, "to", word, "=>", result)
             break
         } else {
-            log.Println("rule failed", rule.regex, "to", word)
+            // log.Println("rule failed", rule.regex, "to", word)
         }
     }
 
