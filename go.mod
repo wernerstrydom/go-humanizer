@@ -1,4 +1,4 @@
-module github.com/wernerstrydom/humanizer
+module github.com/wernerstrydom/go-humanizer
 
 go 1.20
 
