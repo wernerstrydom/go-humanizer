@@ -5,6 +5,9 @@ manipulation in various common formats. It provides functionality to convert
 singular words to plural and vice versa, and to convert text to Pascal, 
 camel, snake, or kebab case.
 
+The module is heavily inspired by the [Humanizer](https://github.com/Humanizr/Humanizer) project for .NET. Some parts
+have been ported and adapted to Go, while other parts have been written from scratch.
+
 ## Features
 
 - **Singular to Plural and Plural to Singular:** This feature allows you to 

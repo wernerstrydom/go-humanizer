@@ -1,4 +1,4 @@
-package en
+package humanizer
 
 import (
     "testing"
@@ -235,10 +235,10 @@ func (suite *InflectionTestSuite) TestPluralize() {
     for _, tt := range tests {
         suite.Run(
             tt.name, func() {
-                if got := Plural(tt.args.value); got != tt.want {
-                    suite.T().Errorf("Plural(`%v`) = %v, want %v", tt.args.value, got, tt.want)
+                if got := Pluralize(tt.args.value); got != tt.want {
+                    suite.T().Errorf("Pluralize(`%v`) = %v, want %v", tt.args.value, got, tt.want)
                 } else {
-                    suite.T().Logf("Plural(`%v`) = %v, want %v", tt.args.value, got, tt.want)
+                    suite.T().Logf("Pluralize(`%v`) = %v, want %v", tt.args.value, got, tt.want)
                 }
             },
         )
@@ -274,10 +274,10 @@ func (suite *InflectionTestSuite) TestSingularize() {
     for _, tt := range tests {
         suite.Run(
             tt.name, func() {
-                if got := Singular(tt.args.value); got != tt.want {
-                    suite.T().Errorf("Singular(`%v`) = %v, want %v", tt.args.value, got, tt.want)
+                if got := Singularize(tt.args.value); got != tt.want {
+                    suite.T().Errorf("Singularize(`%v`) = %v, want %v", tt.args.value, got, tt.want)
                 } else {
-                    suite.T().Logf("Singular(`%v`) = %v, want %v", tt.args.value, got, tt.want)
+                    suite.T().Logf("Singularize(`%v`) = %v, want %v", tt.args.value, got, tt.want)
                 }
             },
         )

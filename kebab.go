@@ -2,6 +2,10 @@ package humanizer
 
 import "strings"
 
+// KebabCase converts a string to kebab case. For example:
+//
+//     KebabCase("The brown fox jumps over the fence") // the-brown-fox-jumps-over-the-fence
+//
 func KebabCase(value string) string {
     words := ToWords(trim(value))
     if len(words) == 0 {

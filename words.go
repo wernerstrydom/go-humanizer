@@ -5,6 +5,13 @@ import (
     "unicode"
 )
 
+// ToWords converts a string to a slice of words. For example:
+//
+//    ToWords("The brown fox jumps over the fence") // []string{"The", "brown", "fox", "jumps", "over", "the", "fence"}
+//    ToWords("the_brown_fox_jumps_over_the_fence") // []string{"the", "brown", "fox", "jumps", "over", "the", "fence"}
+//    ToWords("the-brown-fox-jumps-over-the-fence") // []string{"the", "brown", "fox", "jumps", "over", "the", "fence"}
+//    ToWords("theBrownFoxJumpsOverTheFence") // []string{"the", "Brown", "Fox", "Jumps", "Over", "The", "Fence"}
+//    ToWords("TheBrownFoxJumpsOverTheFence") // []string{"The", "Brown", "Fox", "Jumps", "Over", "The", "Fence"}
 func ToWords(value string) []string {
     if value == "" {
         return []string{}

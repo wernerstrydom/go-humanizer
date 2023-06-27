@@ -1,4 +1,4 @@
-package en
+package humanizer
 
 import (
     "fmt"

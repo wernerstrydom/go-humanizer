@@ -1,13 +1,13 @@
-package en
+package humanizer
 
 import "fmt"
 
 func ExamplePlural() {
-    fmt.Println(Plural("Person"))
+    fmt.Println(Pluralize("Person"))
     // Output: People
 }
 
 func ExampleSingular() {
-    fmt.Println(Singular("people"))
+    fmt.Println(Singularize("people"))
     // Output: person
 }
