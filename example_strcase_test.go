@@ -7,17 +7,17 @@ func ExamplePascalCase() {
     // Output: TheBrownFoxJumpsOverTheFence
 }
 
-func ExamplePascalCase_from_camelCase() {
+func ExamplePascalCase_camelCase() {
     fmt.Println(PascalCase("theBrownFoxJumpsOverTheFence"))
     // Output: TheBrownFoxJumpsOverTheFence
 }
 
-func ExamplePascalCase_from_kebabCase() {
+func ExamplePascalCase_kebabCase() {
     fmt.Println(PascalCase("the-brown-fox-jumps-over-the-fence"))
     // Output: TheBrownFoxJumpsOverTheFence
 }
 
-func ExamplePascalCase_from_snakeCase() {
+func ExamplePascalCase_snakeCase() {
     fmt.Println(PascalCase("the_brown_fox_jumps_over_the_fence"))
     // Output: TheBrownFoxJumpsOverTheFence
 }
@@ -32,17 +32,17 @@ func ExampleCamelCase() {
     // Output: theBrownFoxJumpsOverTheFence
 }
 
-func ExampleCamelCase_from_pascalCase() {
+func ExampleCamelCase_pascalCase() {
     fmt.Println(CamelCase("TheBrownFoxJumpsOverTheFence"))
     // Output: theBrownFoxJumpsOverTheFence
 }
 
-func ExampleCamelCase_from_kebabCase() {
+func ExampleCamelCase_kebabCase() {
     fmt.Println(CamelCase("the-brown-fox-jumps-over-the-fence"))
     // Output: theBrownFoxJumpsOverTheFence
 }
 
-func ExampleCamelCase_from_snakeCase() {
+func ExampleCamelCase_snakeCase() {
     fmt.Println(CamelCase("the_brown_fox_jumps_over_the_fence"))
     // Output: theBrownFoxJumpsOverTheFence
 }
@@ -57,17 +57,17 @@ func ExampleSnakeCase() {
     // Output: the_brown_fox_jumps_over_the_fence
 }
 
-func ExampleSnakeCase_from_pascalCase() {
+func ExampleSnakeCase_pascalCase() {
     fmt.Println(SnakeCase("TheBrownFoxJumpsOverTheFence"))
     // Output: the_brown_fox_jumps_over_the_fence
 }
 
-func ExampleSnakeCase_from_camelCase() {
+func ExampleSnakeCase_camelCase() {
     fmt.Println(SnakeCase("theBrownFoxJumpsOverTheFence"))
     // Output: the_brown_fox_jumps_over_the_fence
 }
 
-func ExampleSnakeCase_from_kebabCase() {
+func ExampleSnakeCase_kebabCase() {
     fmt.Println(SnakeCase("the-brown-fox-jumps-over-the-fence"))
     // Output: the_brown_fox_jumps_over_the_fence
 }
@@ -82,17 +82,17 @@ func ExampleKebabCase() {
     // Output: the-brown-fox-jumps-over-the-fence
 }
 
-func ExampleKebabCase_from_pascalCase() {
+func ExampleKebabCase_pascalCase() {
     fmt.Println(KebabCase("TheBrownFoxJumpsOverTheFence"))
     // Output: the-brown-fox-jumps-over-the-fence
 }
 
-func ExampleKebabCase_from_camelCase() {
+func ExampleKebabCase_camelCase() {
     fmt.Println(KebabCase("theBrownFoxJumpsOverTheFence"))
     // Output: the-brown-fox-jumps-over-the-fence
 }
 
-func ExampleKebabCase_from_snakeCase() {
+func ExampleKebabCase_snakeCase() {
     fmt.Println(KebabCase("the_brown_fox_jumps_over_the_fence"))
     // Output: the-brown-fox-jumps-over-the-fence
 }
