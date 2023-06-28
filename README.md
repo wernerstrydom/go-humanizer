@@ -65,5 +65,37 @@ Contributions to Go-Humanizer are welcome! To contribute:
 4. Submit a pull request to merge your branch into the main repository.
 
 Before submitting your pull request, please ensure that your code adheres 
-to the existing style conventions of the `go-Humanizer` codebase and that 
+to the existing style conventions of the `go-humanizer` codebase and that 
 all tests pass.
+
+## Release Process
+
+To release a new version of Go-Humanizer, follow these steps:
+
+1. Create a new tag
+   
+   ```sh
+    git tag -a v0.1.5 -m "Version 0.1.5"
+   ```
+
+2. Push the tag to GitHub
+
+   ```sh
+   git push origin v0.1.5
+   ```
+
+3. Run go list
+
+    ```sh
+    go list -m github.com/wernerstrydom/go-humanizer@v0.1.5
+    ```
+   
+And then verify that the version is correct, and working.
+
+## License
+
+Go-Humanizer is licensed under the [MIT License](LICENSE).
+
+## Acknowledgements
+
+Go-Humanizer is inspired by the [Humanizer](https://github.com/Humanizr/Humanizer)
